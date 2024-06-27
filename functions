@@ -1,0 +1,22 @@
+class Person:
+    def __init__(self):
+        self.name = "WIn"
+    
+    def biodata(self):
+        self.address = "Kochi Infopark"
+        self.id = "ACE10075"
+        self.contact = 7907799420
+        print(self.address, self.id, self.contact)
+        
+    def interest(self):
+        self.game = "football"
+        self.food = "chicken"
+        self.blood = "B+"
+        print(self.game, self.food, self.blood)
+
+customer_id = Person()
+customer_id.biodata()
+customer_id.interest()
+
+
+#
