@@ -1,0 +1,147 @@
+#dictionary
+
+c_data = {'name':'Anju','Age':34,'location':'kochi'}
+print(len(c_data))
+print(c_data)
+
+#output
+  3
+{'name': 'Anju', 'Age': 34, 'location': 'kochi'}
+------------------------------------------------------------------------
+
+import pandas as pd
+c_data = {'name':['Anju','manu','navven','navven'],'Age':[34,29,23,26],'location':['kochi','kochi','chennai','banglore']}
+df = pd.DataFrame(c_data)
+print(df)
+
+  #output
+  name     Age  location
+0    Anju   34     kochi
+1    manu   29     kochi
+2  navven   23   chennai
+3  navven   26  banglore
+----------------------------------------------------------------------------------
+import keyword
+print(keyword.kwlist)
+print(len(keyword.kwlist))
+
+-------------------------------------------------
+# nested dictionary
+dict2 ={
+       'Name':
+           {
+               'first_name':'Steve',
+               'Last_name':'Jobs'
+           },
+       'Age':30,
+       'Designation':'Programmer',
+       'address':
+           {
+           'Street':'Rockins Road',
+           'City':'Bangalore',
+           'Country':'India'
+           }       
+      }
+print(len(dict2))
+print(dict2)
+import pandas as pd
+df = pd.DataFrame(dict2)
+print(df)
+
+
+  #output
+  4
+{'Name': {'first_name': 'Steve', 'Last_name': 'Jobs'}, 'Age': 30, 'Designation': 'Programmer', 'address': {'Street': 'Rockins Road', 'City': 'Bangalore', 'Country': 'India'}}
+             Name  Age Designation       address
+first_name  Steve   30  Programmer           NaN
+Last_name    Jobs   30  Programmer           NaN
+Street        NaN   30  Programmer  Rockins Road
+City          NaN   30  Programmer     Bangalore
+Country       NaN   30  Programmer         India
+--------------------------------------------------------------------
+
+
+
+  #dictionary methods
+#clear()
+#Removes all the elements from the dictionary.
+
+my_dict = {'Nmae': "Anu", 'Age': 2, 'city': "kochi"}
+my_dict.clear()
+print(my_dict)  
+-----------------------------------------------------------------
+  
+#copy() Returns a copy of the dictionary.
+my_dict = {'Name': "Anu", 'Age': 2, 'city': "kochi"}
+new_dict = my_dict.copy()
+print(new_dict)
+  -------------------------------------------------------------
+  #Returns a dictionary with the specified keys and value.
+
+keys = ('Dani', 'Sanu', 'Shanu')
+value = "software engineer"
+new_dict = dict.fromkeys(keys, value)
+print(new_dict)  
+--------------------------------------
+  #get()Returns the value of the specified key.
+
+
+my_dict = {'Nmae': "Anu", 'Age': 29, 'city': "kochi"}
+value = my_dict.get('Age')
+print(value)  
+  ---------------------------------------------------------------
+##items()
+#Returns a list containing a tuple for each key-value pair.
+
+
+my_dict = {'Name': "Anu", 'Age': 29, 'city': "kochi"}
+items = my_dict.items()
+print(items)
+--------------------------------------------------------
+  #keys()
+#Returns a list containing the dictionary's keys.
+
+
+my_dict = {'Name': "Anu", 'Age': 29, 'city': "kochi"}
+values = my_dict.values()
+keys = my_dict.keys()
+
+print(keys) 
+print(values)
+  -------------------------------------------------------
+  #pop()
+#Removes the element with the specified key.
+
+
+my_dict = {'Name': "Anu", 'Age': 29, 'city': "kochi"}
+value = my_dict.pop('Age')
+print(value)  
+print(my_dict)
+  -------------------------------------------------------------
+  #popitem()
+#Removes the last inserted key-value pair.
+
+
+my_dict =  {'Name': "Anu", 'Age': 29, 'city': "kochi"}
+item = my_dict.popitem()
+print(item)  
+print(my_dict)
+  -------------------------------------------------------------------
+#setdefault()
+#Returns the value of the specified key. If the key does not exist: insert the key with the specified value.
+
+
+my_dict = {'Name': "Anu", 'Age': 29}
+value = my_dict.setdefault('city',"idukki")
+print(value)  # Output: 3
+print(my_dict) 
+  -------------------------------------------------------------
+ #update()
+#Updates the dictionary with the specified key-value pairs.
+
+
+my_dict = {'Name': "Anu", 'Age': 29}
+my_dict.update({'Age': 39, 'city': 'idukki'})
+print(my_dict)
+  ----------------------------------------------
+  
