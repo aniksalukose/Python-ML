@@ -1,0 +1,54 @@
+List = ['red','green','blue']
+print("\nList with the use of String: ")
+print(List)
+print(List[2])
+print(List[-3])
+---------------------------------------------------------
+
+# using list fruits 
+Language = ["English", "Malayalam", "Hindi"] 
+  
+# adding new element grapes 
+Language.append("tamil") 
+  
+# priting the fruits list 
+print(Language) 
+-------------------------------------------------------
+
+#append function # my_list 
+Language = ["English", "Malayalam", "Hindi"]
+  
+# another list 
+another_list = [6, 0, 4, 1] 
+  
+# append another_list to my_list 
+Language.append(another_list) 
+  
+print(Language)
+---------------------------------------------------------------------
+my_list = ["English", "Malayalam", "Hindi"] 
+another_list = [6, 0, 4, 1]
+my_list.extend(another_list)
+print( my_list)
+---------------------------------------------------------------------------
+list1 = [1, 2, 3, 4, 5, 6, 7] 
+list1.reverse() 
+print(list1) 
+--------------------------------------------------------------------
+# creating a list 
+fruit = ["banana","cherry","grape"] 
+fruit.insert(0,"apple") 
+print(fruit)
+------------------------------------------------
+alphabets = ['a','e','d','c','b'] 
+alphabets.sort() 
+print(alphabets) 
+
+random_numbers = [2,5,6,1,8,3] 
+random_numbers.sort() 
+print(random_numbers)
+-------------------------------------------------------------------------
+#create a list
+fruits = ["Apple", "Mango", "Banana", "Cherry" ,"Cherry" ,  "Papaya"]
+# printing count using count() function
+print(fruits.count("Cherry"))
