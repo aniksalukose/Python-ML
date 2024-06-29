@@ -75,3 +75,31 @@ def function_add(p,q):
     print(p+q)
 
 result = function_add(p,q)    
+
+
+-------------------------------------------------------------------------------------------------------------------------------------------------
+ 5.Function with Default Parameter:
+
+Write a function that takes a string and a number (with a default value of 1) as parameters. The function should print the string repeated the given number of times.
+
+
+def function_call(r,i=1):
+    for  i in range(i):
+        print (r)
+
+
+r = 'welcome to python Ml Session'
+i = 5
+function_call(r,i)
+-----------------------------------------------------------------------------------------------------------------------------------------------
+6.Function with Variable-Length Arguments:
+
+Write a function that takes a variable number of arguments and returns their product.
+
+def product_numbers(*args):
+    v = 1
+    for number in args:
+        v *= number
+    return v
+print(product_numbers(5,6,2))    
+print(product_numbers(3,4))  
