@@ -1,0 +1,77 @@
+1.Basic Data Types:
+Write a Python program to create variables of different data types: integer, float, string, and boolean. Print each variable and its data type.
+
+a = 1
+b = 1.9
+c = 'Hai'
+d = 4+7j
+e = True
+f = '21'
+print(a,type(a))
+
+print(b,type(b))
+
+print(c,type(c))
+
+print(d,type(d))
+print(e,type(e))
+--------------------------------------------------------------------------------
+2. Type Conversion:
+Write a Python program to convert an integer to a float, a float to a string, and a string to an integer (if possible). Print the results.
+#Type Conversion:
+#convert integer to a float
+x = 1
+fl = float(x)
+print(fl)
+
+#convert  float to a string
+y = 2.9
+Str = str(y)
+print(type(Str))
+
+
+#string to an integer 
+z = '21'
+i_value = int(z)
+print(i_value)
+print(type(i_value))
+--------------------------------------------------------------------------------------------------------
+3. Collections Tasks
+A. Lists: Create a list of your favorite fruits. Write a program to add a new fruit to the list, remove a fruit from the list, and print the list.
+#Collections Tasks
+
+fruits = ['grape','apple','mango']
+fruits.append('orange') # add item
+
+remove = fruits.pop(2) # remove item with  index 2
+print(fruits)
+print(remove)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------
+B.Tuples: Create a tuple with numbers from 1 to 5. Write a program to print each element in the tuple.
+
+Tup = (1,2,3,4,5)
+print(type(Tup))
+print(Tup)
+
+for i in Tup:
+    print(i)
+----------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+C.Dictionaries: Create a dictionary with keys as names and values as ages. Write a program to add a new name and age, update an existing age, and print the dictionary.
+
+dict = {'Anu':23,'Revathy':30,'John':28}
+print(dict)
+# add new item
+
+dict.update({'Biny':29,'Manu':31})
+print(dict)
+-----------------------------------------------------------------------------------------------------------------------------------------------------------------------------------
+4.Functions Tasks
+a. Simple Function: Write a function that takes two numbers as parameters and returns their sum. Call the function and print the result.
+ 
+p = 23
+q = 26
+
+def function_add(p,q):
+    print(p+q)
+
+result = function_add(p,q)    
