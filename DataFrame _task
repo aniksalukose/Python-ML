@@ -1,0 +1,35 @@
+
+import pandas as pd
+df = pd.read_csv('data.csv')
+print(df.to_string())
+
+------------------------------------------------------
+import pandas as pd
+a = [56,69,25]
+
+Var1 = pd.Series(a,index =["x","y","z"])
+print(Var1)
+---------------------------------------------
+import pandas as pd
+df = pd.read_csv('data.csv')
+print(df.head(10))
+--------------------------------------------
+import pandas as pd
+df = pd.read_csv('data.csv')
+print(df.tail(10))
+---------------------------------------------
+#finding missing values
+df.isnull().sum()
+----------------------------------------------
+#find duplicates values
+duplicates = df[df.duplicated()]
+print(duplicates)
+
+-------------------------------------------
+#The info() getting a quick overview of your dataset. 
+print(df.info())
+-----------------------------
+
+# read json file import pandas as pd
+df = pd.read_json('data.json')
+print(df)
