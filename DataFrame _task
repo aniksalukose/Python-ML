@@ -33,3 +33,57 @@ print(df.info())
 # read json file import pandas as pd
 df = pd.read_json('data.json')
 print(df)
+-------------------------------------------------------------------------------------
+# Replace empty values
+import pandas as pd
+var = pd.read_csv('data.csv')
+var.fillna(250,inplace =True)
+print(var.to_string())
+---------------------------------------------------------------
+import pandas as pd
+
+
+var = pd.read_csv('data.csv')
+var1 = var["Maxpulse"].mean()
+print(var1)
+var["Maxpulse"].fillna(var1,inplace =True)
+print(var.to_string())
+---------------------------------------------------------------
+#median
+import pandas as pd
+
+
+var = pd.read_csv('data.csv')
+var1 = var["Maxpulse"].median()
+print(var1)
+var["Maxpulse"].fillna(var1,inplace =True)
+print(var.to_string())
+-----------------------------------------------------------------------
+import pandas as pd
+
+
+var = pd.read_csv('data.csv')
+var1 = var["Duration"].mode()
+print(var1)
+var["Duration"].fillna(var1,inplace =True)
+print(var.to_string())
+------------------------------------------------------------------
+import pandas as pd
+
+
+var = pd.read_csv('data.csv')
+var['Date'] = pd.to_datetime(var['Date'])
+print(var.to_string())
+
+
+----------------------------------------------------
+
+
+#lamda function
+x = lambda a,b :a*b
+print(x(5,7))
+-----------------
+def square(x):
+    return x ** 2
+
+print(square(5)) 
